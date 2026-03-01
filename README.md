@@ -19,8 +19,13 @@ CUDA_VISIBLE_DEVICES=0 python data_instruct.py --directory '/mnt/10T/wkc/Databas
 The framework of the proposed model. It consists of three parts: (a) optimal prompt selection module, (b) hierarchical visual degradation modeling branch, and (c) multimodal quality capturing module. To better and fully capture the detailed information of OIs and further enhance the fusion of multimodal data, the DME module is used to attenuate the degradation information, while the MQC module is used to enhance the multimodal feature representation.
 
 
+### Inference one Image
+```python
+CUDA_VISIBLE_DEVICES=0 python inference_one_image.py --load_ckpt_path    --test_img_path    
+``` 
+* Download `Long_CLIP weights` [ <a href="https://pan.baidu.com/s/1P811lwVsHZa4fpTwfE8cEw?pwd=du1w" target="_blank">baidu cloud</a> (password: du1w) ] 
 
-### Train and Test
+### Train
 
 Edit `config.py` for configuration
 
