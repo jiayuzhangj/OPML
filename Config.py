@@ -1,4 +1,4 @@
-import torch
+#import torch
 
 
 class Config(dict):
@@ -36,17 +36,18 @@ def OPML_config():
         'root_dir':'/mnt/10T/zjy/database/OIQ_10k/OIQ_10k_resize_512',
         'csv_path':'/mnt/10T/zjy/D_OIQA/database_csv/RMCP/OIQ-10k/GPT_4v_4o_ge_cl_OIQ_10k_train.csv',
         'test_csv_path':'/mnt/10T/zjy/D_OIQA/database_csv/RMCP/OIQ-10k/GPT_4v_4o_ge_cl_OIQ_10k_test.csv',
-        'vp_path': '/mnt/10T/tzw/methods/dataset/OIQ-10K/viewports_8',
+        'Long-CLIP_path':'XXX/XXX/XXX'
+        #'vp_path': '/mnt/10T/tzw/methods/dataset/OIQ-10K/viewports_8',
         # 'vp_path':'/mnt/10T/rjl/dataset/viewports_8',
-        'train_info_csv_path': '/mnt/10T/zjy/D_OIQA/database_csv/mutil_csv/GPT_4_JUFE_10k_train.csv',
-        'test_info_csv_path': '/mnt/10T/zjy/D_OIQA/database_csv/mutil_csv/GPT_4_JUFE_10k_test.csv',
-        'save_ckpt_path': '/home/test/10t/tzw/ckpt/IQCaption360',
+        #'train_info_csv_path': '/mnt/10T/zjy/D_OIQA/database_csv/mutil_csv/GPT_4_JUFE_10k_train.csv',
+        #'test_info_csv_path': '/mnt/10T/zjy/D_OIQA/database_csv/mutil_csv/GPT_4_JUFE_10k_test.csv',
+        #'save_ckpt_path': '/home/test/10t/tzw/ckpt/IQCaption360',
         'load_ckpt_path': '',
         'tensorboard_path': '',
         # train setting
         'seed': 42,
-        'model_name': 'IQCaption360-OIQ10K-AFA-MSFS-VPFS-DRPN-QSPN-lr1e-4-bs32-epoch50',
-        'dataset_name': 'OIQ-10K_GPT_4_vision_preview',
+        #'model_name': 'IQCaption360-OIQ10K-AFA-MSFS-VPFS-DRPN-QSPN-lr1e-4-bs32-epoch50',
+        #'dataset_name': 'OIQ-10K_GPT_4_vision_preview',
         'epochs': 50,
         'batch_size': 8,
         'num_workers': 8,
