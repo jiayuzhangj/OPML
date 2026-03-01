@@ -12,3 +12,5 @@ Jiebin Yan<sup>1</sup>, Jiayu Zhang<sup>1</sup>, Jiale Rao<sup>1</sup>, Lei Wu<s
 
 ## :dart:OPML Architecture
 <p align="center"><img src="https://github.com/jiayuzhangj/OPML/blob/main/image/OPML.png" width="900"></p>
+
+The framework of the proposed model. It consists of three parts: (a) optimal prompt selection module, (b) hierarchical visual degradation modeling branch, and (c) multimodal quality capturing module. To better and fully capture the detailed information of OIs and further enhance the fusion of multimodal data, the DME module is used to attenuate the degradation information, while the MQC module is used to enhance the multimodal feature representation.
