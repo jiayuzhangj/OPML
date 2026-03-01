@@ -101,7 +101,7 @@ transform1 = transforms.Compose([
     train_loader = DataLoader(train_dataset, batch_size=cfg.batch_size,drop_last=True, num_workers=cfg.num_workers,shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=cfg.batch_size, drop_last=True,num_workers=cfg.num_workers,shuffle=False)
 
-    model=PQ_clip_Model()
+    model=PQ_clip_Model(cfg.Long-CLIP_path)
 
     model = model.to(device)
       
