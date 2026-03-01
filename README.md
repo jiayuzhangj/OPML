@@ -23,8 +23,8 @@ The framework of the proposed model. It consists of three parts: (a) optimal pro
 ```python
 CUDA_VISIBLE_DEVICES=0 python inference_one_image.py --load_ckpt_path    --test_img_path    
 ``` 
-* Download `Long_CLIP weights` [ <a href="https://pan.baidu.com/s/1P811lwVsHZa4fpTwfE8cEw?pwd=du1w" target="_blank">baidu cloud</a> (password: du1w) ] 
-The pre-training weights for OIQ-10K and JUFE-10K will be updated later.
+* Download `Long_CLIP weights` [ <a href="https://pan.baidu.com/s/1P811lwVsHZa4fpTwfE8cEw?pwd=du1w" target="_blank">baidu cloud</a> (password: du1w) ]
+* The pre-training weights for OIQ-10K and JUFE-10K will be updated later.
 ### Train
 
 Edit `config.py` for configuration
