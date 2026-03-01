@@ -40,3 +40,15 @@ CUDA_VISIBLE_DEVICES=0 python train.py
 ```python
 CUDA_VISIBLE_DEVICES=0 python test.py
 ```
+
+
+
+## Citation
+```plaintext
+@article{yan2026Optimal,
+  title={Optimal Prompt Guided Multimodal Learning for Blind Omnidirectional Image Quality Assessment},
+  author={Yan, Jiebin and Zhang, Jiayu and Rao, Jiale and Wu, Lei and Cheng, Pengfei and Fang, Yuming},
+  journal={IEEE Transactions on Multimedia},
+  year={2026},
+}
+```
