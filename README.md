@@ -27,7 +27,7 @@ CUDA_VISIBLE_DEVICES=0 python inference_one_image.py --load_ckpt_path  /home/xxx
 * The pre-training weights for OIQ-10K and JUFE-10K will be updated later.
 ### Train and Test
 
-Edit `config.py` for configuration
+Edit `Config.py` for configuration
 
 * Train
 
