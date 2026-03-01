@@ -11,4 +11,4 @@ Jiebin Yan<sup>1</sup>, Jiayu Zhang<sup>1</sup>, Jiale Rao<sup>1</sup>, Lei Wu<s
 
 
 ## :dart:OPML Architecture
-<p align="center"><img src="" width="900"></p>
+<p align="center"><img src="https://github.com/jiayuzhangj/OPML/blob/main/image/OPML.png" width="900"></p>
