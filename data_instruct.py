@@ -4,6 +4,7 @@ import os
 import re
 import io
 import random  
+import argparse
 import numpy as np
 import threading
 from util import *
@@ -313,6 +314,8 @@ def GPT4_dataset_instruct(
     # f2.close()
 
 if __name__ == "__main__":
+
+    parse = argparse.ArgumentParser()
     parse.add_argument('--directory', type=str, default='/mnt/10T/wkc/Database/OIQ-10K/OIQ-10K_image')
     parse.add_argument('--csv_path', type=str, default='/mnt/10T/zjy/database/oiq_10k.csv')
     parse.add_argument('--text_prompt', type=str, default='Please generate image captions for this omnidirectional image in terms of quality')
