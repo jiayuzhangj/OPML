@@ -33,7 +33,7 @@ Edit `config.py` for configuration
 
 ```python
 CUDA_VISIBLE_DEVICES=0 python train.py
-
+```
 
 * Test
 
