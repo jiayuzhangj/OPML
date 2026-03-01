@@ -7,6 +7,9 @@ Jiebin Yan<sup>1</sup>, Jiayu Zhang<sup>1</sup>, Jiale Rao<sup>1</sup>, Lei Wu<s
 
 ## :four_leaf_clover:Generate quality-aware description
 
+```python
+CUDA_VISIBLE_DEVICES=0 python data_instruct.py --directory '/mnt/10T/wkc/Database/0IQ-10K/0IQ-10K_image' --csv_path '/mnt/10T/zjy/database/oiq_10k.csv'  --text_prompt 'Your prompt' --save_folder_path 'Your save_folder_path' --csv_folder_path 'Your csv_folder_path' --csv_name 'OIQ-10K' --save_name_path 'OIQ-10K'
+``` 
 
 
 
