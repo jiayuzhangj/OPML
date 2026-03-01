@@ -21,15 +21,15 @@ The framework of the proposed model. It consists of three parts: (a) optimal pro
 
 ### Inference one Image
 ```python
-CUDA_VISIBLE_DEVICES=0 python inference_one_image.py --load_ckpt_path    --test_img_path    
+CUDA_VISIBLE_DEVICES=0 python inference_one_image.py --load_ckpt_path  /home/xxxy/Zjy/OPML/ckpt/best_epoch.pth  --test_img_path    /home/xxxy/Zjy/databases/dis535.png
 ``` 
 * Download `Long_CLIP weights` [ <a href="https://pan.baidu.com/s/1P811lwVsHZa4fpTwfE8cEw?pwd=du1w" target="_blank">baidu cloud</a> (password: du1w) ]
 * The pre-training weights for OIQ-10K and JUFE-10K will be updated later.
-### Train
+### Train and Test
 
 Edit `config.py` for configuration
 
-* Train and Test
+* Train
 
 ```python
 CUDA_VISIBLE_DEVICES=0 python train.py
