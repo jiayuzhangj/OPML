@@ -56,7 +56,7 @@ if __name__ == '__main__':
     dataset=DE_t_new_Dataset
 
     train_dataset = dataset(
-        cfg=DE_360IQA_config(),
+        cfg=OPML_config(),
         csv_path=cfg.csv_path,
         transform= transforms.Compose([
         
@@ -78,7 +78,7 @@ transform1 = transforms.Compose([
     
 
     test_dataset = dataset(
-        cfg=DE_360IQA_config(),
+        cfg=OPML_config(),
         csv_path=cfg.test_csv_path,
         transform = transforms.Compose([
           
