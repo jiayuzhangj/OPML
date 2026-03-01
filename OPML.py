@@ -14,6 +14,7 @@ import torch.nn.functional as F
 from longclip_model import longclip
 device='cuda'
 
+
 def find_max(a, b, c, d):
     max_value = 0
     max_variable = 'similarity1'
@@ -37,9 +38,9 @@ def find_max(a, b, c, d):
 
 class max_textencode(nn.Module):  
 
-    def __init__(self):
+    def __init__(self,longclip_path):
         super().__init__()
-        self.model, preprocess = longclip.load("/mnt/10T/zjy/D_OIQA/longclip_model/longclip-B.pt", device=device)
+        self.model, preprocess = longclip.load(longclip_path, device=device)
         for param in self.model.parameters():
             param.requires_grad = False
         self.my_learnable_tensor1 = nn.Parameter(torch.randn(2048))
@@ -185,7 +186,7 @@ class AlternatingFusionModel(nn.Module):
 
 
 class OPML_model(nn.Module):
-    def __init__(self, num_classes=1):
+    def __init__(self, num_classes=1,longclip_path):
         super(PQ_clip_Model, self).__init__()
         self.model = models.resnet50(pretrained=True)
         self.resnet50 = nn.Sequential(*list(self.model.children())[:-1])
@@ -211,7 +212,7 @@ class OPML_model(nn.Module):
         self.relu=nn.ReLU()
         self.reduce_channels = nn.Conv2d(3840, 2048, kernel_size=1, stride=1, padding=0, bias=False)
         self.Avgpool2d=nn.AdaptiveAvgPool2d((1, 1))
-        self.max_textencode=max_textencode()
+        self.max_textencode=max_textencode(longclip_path)
         self.classifier =  nn.Sequential(
 
             nn.Linear(2560, 512),
