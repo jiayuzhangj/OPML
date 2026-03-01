@@ -30,7 +30,7 @@ if __name__ == '__main__':
     os.environ['NUMEXPR_NUM_THREADS'] = str(cpu_num)
     torch.set_num_threads(cpu_num)
     setup_seed(20)
-    cfg=DE_360IQA_config()
+    cfg=OPML_config()
     
     
     cfg.log_file = cfg.model_name + ".log"
