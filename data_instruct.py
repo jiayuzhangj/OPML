@@ -313,19 +313,30 @@ def GPT4_dataset_instruct(
     # f2.close()
 
 if __name__ == "__main__":
-    directory = '/mnt/10T/wkc/Database/OIQ-10K/OIQ-10K_image'  # 将这里替换为你的目录路径
-    csv_path='/mnt/10T/zjy/database/oiq_10k.csv'
+    parse.add_argument('--directory', type=str, default='/mnt/10T/wkc/Database/OIQ-10K/OIQ-10K_image')
+    parse.add_argument('--csv_path', type=str, default='/mnt/10T/zjy/database/oiq_10k.csv')
+    parse.add_argument('--text_prompt', type=str, default='Please generate image captions for this omnidirectional image in terms of quality')
+    parse.add_argument('--save_folder_path', type=str, default='xxx/xxx/xxx')
+    parse.add_argument('--csv_folder_path', type=str, default='xxx/xxx/xxx')
+    parse.add_argument('--csv_name', type=str, default='xxx')
+    parse.add_argument('--save_file_name', type=str, default='xxx')
+    
+    
+    args = parse.parse_args()
+    directory = args.directory  # 将这里替换为你的目录路径
+    csv_path= args.csv_path
     image_paths,image_names = split_dataset_name(csv_path,directory)
     key="***"
     dataset_name="OIQ_10k"
     image_path_list=image_paths
     image_name_list=image_names
-    text_prompt="Please generate image captions for this omnidirectional image in terms of quality"
-    save_folder_path="/mnt/10t/zjy/OIQA-database/result"
-    csv_folder_path="/mnt/10t/zjy/OIQA-database/result/csv_result"
-    csv_name="caption_test_OIQ_10k.csv"
-    save_file_name="Gemini_OIQ_10k.txt"
+    text_prompt=args.text_prompt
+    save_folder_path=args.save_folder_path
+    csv_folder_path=args.csv_folder_path
+    csv_name=args.csv_name
+    save_file_name=args.save_file_name
     ic_path=""
+    
     GPT4_dataset_instruct(
             key=key,
             dataset_name=dataset_name,
