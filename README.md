@@ -1,5 +1,5 @@
 # *Optimal Prompt Guided Multimodal Learning for Blind Omnidirectional Image Quality Assessment*
-Jiebin Yan<sup>1</sup>, Jiayu Zhang<sup>1</sup>, Jiale Rao<sup>1</sup>, Lei Wu<sup>1</sup>, Pengfei Cheng<sup>2</sup>, and Yuming Fang<sup>1</sup>.
+Jiebin Yan<sup>1</sup>, Jiayu Zhang<sup>1</sup>, Jiale Rao<sup>1</sup>, Lei Wu<sup>1</sup>, Pengfei Chen<sup>2</sup>, and Yuming Fang<sup>1</sup>.
 
 <sup>1</sup> School of Computing and Artificial Intelligence, Jiangxi University of Finance and Economics
 
