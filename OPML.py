@@ -136,7 +136,7 @@ class DME(nn.Module):
             nn.Conv2d(in_planes * 2, in_planes, 1, bias=False),
             nn.Sigmoid()
         )
-
+        self.gate2=nn.Parameter(torch.zeros(1, in_planes, 1, 1))
 
         
     def forward(self, x):
@@ -163,7 +163,7 @@ class DME(nn.Module):
         
         
         out = self.gate1(out)
- 
+        out=out*self.gate2
         
         return out*x1_x
 
